@@ -8,7 +8,7 @@ module.exports = {
 }
 
 function get() {
-    return db('users');
+    return db('users').orderBy('user_id');
 }
 
 function getBy(param) {
